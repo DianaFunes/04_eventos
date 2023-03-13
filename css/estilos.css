@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: #88b388;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+    position: relative;
+}	
+
+section{
+	height:500px;
+	background-color: #c2ffc2;
+	font-size:20px;
+    position: relative;
+}
+
+footer{
+    background-color: #88b388;
+}	
+
+
+/*------------------------------------------------------------------------------*/
+.capa{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-top: 4px;
+    margin-left: 8px;
+    display: inline-block;
+}
+#tema{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff06;
+}
+#capa01{
+    background-color: #6bb3b3;
+}
+
+#capa02{
+    background-color: #9999ff;
+}
+#capa03{
+    background-color: #ff9cb1;
+}
+.ligero{
+    color: #390866;
+    font-family: Papyrus;
+}
+.texto{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #172e96;
+    text-shadow: 2px 2px #fff;
+    font-family: "Dancing Scrip", cursive;
+    text-align: center;
+}
+.chico{
+    font-size: 50px;
+}
+.mediano{
+    font-size: 70px;
+}
+.grande{
+    font-size: 90px;
+}
+
+#mover{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff06;
+}
+
+/*imagen posicionarla mas o menos en medio*/
+figure{
+    position: relative;
+    top: 120 px;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+/*dimensionar mas pequeña la imagen*/
+img{
+    width: 100%;
+    height: 360px;
+}
+/*dibujar el contenedor del mensaje*/
+.mensaje{
+    position: absolute;
+    top: 50px;
+    right: -30%;
+    width: 60%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 12px 35px rgba(0, 0, 0, 0.5);
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 100px;
+    display: none;
+
+}
+/*Clase para activar la vista del mensaje*/
+.mostrarMensaje{
+    display: block;
+}
+.nuevoMsj{
+    display: block;
+}
+
+
+.foto{
+    width: 50px;
+    height: 30px;
+}
+#personaje{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.164);
+    text-align: center;
+}

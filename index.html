@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+		<h1>¡Javascript!</h1>
+
+        <div id="tema">
+    
+            <div class="capa" id="capa01" title="dark" onclick="dark()"></div>
+            <div class="capa" id="capa02" title="light"></div>
+            <div class="capa" id="capa03" title="life"></div>
+        </div>
+	</header>
+    <section id="resultados">
+        <!--este apartado permite validar campos-->
+        <select id="tamanio" onchange="dimension()">
+            <option value="texto">Tamaño fuente</option>
+            <option value="chico">Chico</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+            
+        </select>
+
+        <div id="mover">
+            <p>X</p>
+            <input type="button" value="+" onclick="arriba()">
+            <input type="button" value=" - " onclick="abajo()">
+            <p>Y</p>
+            <input type="button" value="+" onclick="izquierda()">
+            <input type="button" value=" - " onclick="derecha()">
+        
+        </div>
+        <p id="texto">
+            No dejes que el miedo te impida ser feliz.
+        </p>
+
+        <figure id="terminator" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+            <img id="foto" src="image/pato.jpg" alt="">
+            <figcaption id="mensaje" class="mensaje">cuak cuak ñam ñam</figcaption>
+            <input type="text" class="entrada" id="entrada" placeholder="nuevo mensaje">
+            <input type="button" value="nuevo" onclick="nuevoMsj()">
+        </figure>
+
+        <article id="personajes">
+            <img class="foto" onclick="cambiarImagen('arbol','soy un arbol')" src="image/arbol.png" alt="">
+            <img class="foto" onclick="cambiarImagen('pantalla','soy una pantalla')" src="image/pantalla.png" alt="">
+            <img class="foto" onclick="cambiarImagen('insta','we lof insta')" src="image/insta.png" alt="">
+        </article>
+    </section>
+
+    <footer>D A N D </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
